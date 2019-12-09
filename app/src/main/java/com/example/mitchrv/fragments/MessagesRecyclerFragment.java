@@ -139,11 +139,4 @@ public class MessagesRecyclerFragment extends Fragment implements RecyclerViewAd
         fragment.setArguments(args);
         return fragment;
     }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mMessageRecyclerFragmentViewModel.clearComments();
-        mMessageRecyclerFragmentViewModel.clearImages();
-    }
 }
