@@ -48,5 +48,11 @@ public class MessageRecyclerFragmentViewModel extends ViewModel {
     public void clearImages() {
         messagesRepository.removeImages();
     }
-
+    
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        clearComments();
+        clearImages();
+    }
 }
