@@ -1,2 +1,2 @@
 # ImageBoardReader
- 2ch reader 
+only /pr/ thread from 2ch.hk
